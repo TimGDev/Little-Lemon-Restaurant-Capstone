@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import Logo from "../../images/logo-original.png";
+import classes from "./Header.css";
 
 export default function Header() {
   return (
-    <header>
-      <div>
-        <div>
+    <header className={classes.header}>
+      <div className={`fluidContainer ${classes.headerContainer}`}>
+        <div className={classes.logo}>
           <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        <nav>
+        <nav className={classes.mainNavigation}>
           <li>
             <Link to="/">Home</Link>
           </li>

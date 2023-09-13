@@ -4,18 +4,19 @@ import FacebookIcon from "../ui/icons/FacebookIcon";
 import InstagramIcon from "../ui/icons/InstagramIcon";
 import YouTubeIcon from "../ui/icons/YouTubeIcon";
 import FooterLogo from "../../images/logo-vertical-white.png";
+import classes from "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer>
-      <div>
-        <div>
+    <footer className={classes.footer}>
+      <div className={`fluidContainer ${classes.footerContainer}`}>
+        <div className={classes.footerLogo}>
           <Link to="/">
             <img src={FooterLogo} alt="Footer logo" />
           </Link>
         </div>
-        <div>
-          <div>
+        <div className={classes.linksContainer}>
+          <div className={classes.linksBlock}>
             <p>Site Map</p>
             <menu>
               <li>
@@ -38,7 +39,7 @@ export default function Footer() {
               </li>
             </menu>
           </div>
-          <div>
+          <div className={classes.linksBlock}>
             <p>Contact</p>
             <menu>
               <li>555 Little Lemon</li>
@@ -68,7 +69,7 @@ export default function Footer() {
               </li>
             </menu>
           </div>
-          <div>
+          <div className={classes.linksBlock}>
             <p>Social media</p>
             <menu>
               <li>
