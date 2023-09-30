@@ -1,6 +1,6 @@
 import Button from "../ui/Button";
 import HeroImage from "../../images/cta-hero-image.jpg";
-import classes from "./CallToAction.css";
+import classes from "./CallToAction.module.css";
 
 export default function CallToAction() {
   return (
@@ -19,7 +19,10 @@ export default function CallToAction() {
         </div>
         <div className={classes.heroImage}>
           <div className={classes.imageContainer}>
-            <img src={HeroImage} alt="Delicious bruschettas" />
+            <img
+              src={HeroImage}
+              alt="Delicious bruschettas"
+            />
           </div>
         </div>
       </div>

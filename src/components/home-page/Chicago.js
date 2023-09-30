@@ -1,3 +1,6 @@
+import ArrowRightIcon from "../ui/icons/ArrowRightIcon";
+import MarioImage from "../../images/about-mario.jpg";
+import ResturantFood from "../../images/restauranfood.jpg";
 import classes from "./Chicago.module.css";
 
 export default function Chicago() {
@@ -29,9 +32,20 @@ export default function Chicago() {
           </div>
           <div className={classes.imagesCollage}>
             <div className={classes.leftImageContainer}>
-              <div></div>
+              <div>
+                Mario
+                <span>
+                  <ArrowRightIcon />
+                </span>
+              </div>
+              <div>
+                <img src={ResturantFood} alt="Luigi chef" />
+              </div>
             </div>
             <div className={classes.rightImageContainer}>
+              <div>
+                <img src={MarioImage} alt="Mario chef" />
+              </div>
               <div></div>
             </div>
           </div>

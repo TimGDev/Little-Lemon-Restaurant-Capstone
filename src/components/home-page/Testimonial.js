@@ -1,6 +1,6 @@
 import StarIcon from "../ui/icons/StarIcon";
 import HalfStarIcon from "../ui/icons/HalfStarIcon";
-import classes from "./Testimonial.css";
+import classes from "./Testimonial.module.css";
 import React from "react";
 
 function Stars({ numberOfStars }) {
@@ -33,7 +33,10 @@ export default function Testimonial({ image, name, stars, quote }) {
   return (
     <article className={classes.testimonial}>
       <div className={classes.userImage}>
-        <img src={image} alt="Profile" />
+        <img
+          src={image}
+          alt="Profile"
+        />
       </div>
       <div className={classes.stars}>
         <Stars numberOfStars={stars} />

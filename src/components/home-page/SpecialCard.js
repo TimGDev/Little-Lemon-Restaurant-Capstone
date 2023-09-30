@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import ShoppingCartIcon from "../ui/icons/ShoppingCartIcon";
-import classes from "./SpecialCard.css";
+import classes from "./SpecialCard.module.css";
 
 export default function SpecialCard({ image, title, price, description }) {
   return (

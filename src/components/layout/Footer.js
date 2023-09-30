@@ -4,7 +4,7 @@ import FacebookIcon from "../ui/icons/FacebookIcon";
 import InstagramIcon from "../ui/icons/InstagramIcon";
 import YouTubeIcon from "../ui/icons/YouTubeIcon";
 import FooterLogo from "../../images/logo-vertical-white.png";
-import classes from "./Footer.css";
+import classes from "./Footer.module.css";
 
 export default function Footer() {
   return (
@@ -42,20 +42,22 @@ export default function Footer() {
           <div className={classes.linksBlock}>
             <p>Contact</p>
             <menu>
-              <li>555 Little Lemon</li>
+              <li>Some address</li>
               <li>
+                <p>123-456-7890</p>
                 <a
-                  href="tel:410-555-5555"
+                  href="tel:123-456-7890"
                   style={{
                     textDecoration: "underline",
                     position: "relative",
                     top: "-0.5rem",
                   }}
                 >
-                  410-555-5555
+                  Give us a call
                 </a>
               </li>
               <li>
+                <p>info@little-lemon.com</p>
                 <a
                   href="mailto:info@little-lemon.com"
                   style={{
@@ -64,7 +66,7 @@ export default function Footer() {
                     top: "-0.5rem",
                   }}
                 >
-                  info@little-lemon.com
+                  Write us a letter
                 </a>
               </li>
             </menu>
